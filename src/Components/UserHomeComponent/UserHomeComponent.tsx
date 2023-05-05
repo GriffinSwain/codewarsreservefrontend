@@ -1,13 +1,14 @@
 import React from 'react';
-import logout from '../../Assets/log-out.png';
 import '../UserHomeComponent/UserHomeComponent.css';
 import { Container, Row, Card, Col, Form, Navbar, Dropdown, DropdownButton } from 'react-bootstrap';
-import search from '../../Assets/Search.png';
-import logo from '../../Assets/codewarsres-logo.png';
-import copyright from '../../Assets/copyright.png'
-
 
 function UserHomeComponent() {
+
+    const logo = require('../../Assets/codewarsres-logo.png');
+    const copyright = require('../../Assets/copyright.png');
+    const search = require('../../Assets/Search.png');
+    const logout = require('../../Assets/log-out.png');
+
     return (
         <div>
             <Navbar className='nav-bg'>
@@ -33,14 +34,14 @@ function UserHomeComponent() {
                                 <p className='rectangle kata-rank'>4 Kyu</p>
                             </div>
                             <div className='col-4'>
-                                <p className='username'>UserNameGoesHere </p>
+                                <p className='username'>BrandonLe </p>
                             </div>
                         </Row>
                         <Row className='user-info'>
                             <div className='col-4'>
                                 <div className='user-data gap-2'>
                                     <p className='tag'>Name: </p>
-                                    <p className='user-info-input'> Brandon Lee</p>
+                                    <p className='user-info-input'> Brandon Le</p>
                                 </div>
                                 <div className='user-data gap-2'>
                                     <p className='tag'>Honor: </p>
@@ -49,7 +50,7 @@ function UserHomeComponent() {
                             </div>
                             <div className='col-4'>
                                 <div className='user-data gap-2'>
-                                    <p className='tag'>Clane: </p>
+                                    <p className='tag'>Clan: </p>
                                     <p className='user-info-input'>Codestack Academy</p>
                                 </div>
                                 <div className='user-data gap-2'>
@@ -98,14 +99,14 @@ function UserHomeComponent() {
 
                     <p className='sort-title'>Languages</p>
                     <DropdownButton className='dropdown-bg' id="dropdown-basic-button" title="Choose a Language">
-                        <Dropdown.Item href="#/action-1">A to Z</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Z to A</Dropdown.Item>
+                        <Dropdown.Item href="#/action-1">C#</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">Javascript</Dropdown.Item>
                     </DropdownButton>
 
                     <p className='sort-title'>Difficulty</p>
                     <DropdownButton className='dropdown-bg' id="dropdown-basic-button" title="Select">
-                        <Dropdown.Item href="#/action-1">A to Z</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Z to A</Dropdown.Item>
+                        <Dropdown.Item href="#/action-1">8 Kyu</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">7 Kyu</Dropdown.Item>
                     </DropdownButton>
                 </Card>
 
@@ -114,7 +115,7 @@ function UserHomeComponent() {
             <Container className='nav-container'>
                 <div>
                 <img src={copyright}/>
-                <p>2023 CodeStack Academy Day Class</p>
+                <p>2023 CodeStack Academy Day Class Team 1</p>
                 </div>
             </Container>
             </Navbar>
